@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E7D23D78F4D7F7C7A58DAC7 /* Pods_FretelloCodingChallenge_FretelloCodingChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD11BD2B3CFDC60B8FCF4F2A /* Pods_FretelloCodingChallenge_FretelloCodingChallengeUITests.framework */; };
+		81F1AEDDF5F6D53B00340BE0 /* Pods_FretelloCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C749EDDB51A0B06ED77A09E /* Pods_FretelloCodingChallenge.framework */; };
+		9348AED4EAAEDDF6E30AFC35 /* Pods_FretelloCodingChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B873DFC896E1924675A4AFA8 /* Pods_FretelloCodingChallengeTests.framework */; };
+		CE2A5EBD25C2BD3900347CAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A5EBC25C2BD3900347CAF /* AppDelegate.swift */; };
+		CE2A5EBF25C2BD3900347CAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A5EBE25C2BD3900347CAF /* SceneDelegate.swift */; };
+		CE2A5EC125C2BD3900347CAF /* PracticeSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A5EC025C2BD3900347CAF /* PracticeSessionViewController.swift */; };
+		CE2A5EC625C2BD3C00347CAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE2A5EC525C2BD3C00347CAF /* Assets.xcassets */; };
+		CE2A5EC925C2BD3C00347CAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2A5EC725C2BD3C00347CAF /* LaunchScreen.storyboard */; };
+		CE2A5ED425C2BD3D00347CAF /* FretelloCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A5ED325C2BD3D00347CAF /* FretelloCodingChallengeTests.swift */; };
+		CE2A5EDF25C2BD3D00347CAF /* FretelloCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A5EDE25C2BD3D00347CAF /* FretelloCodingChallengeUITests.swift */; };
+		CE2A5F0925C2C64700347CAF /* PracticeSessionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A5F0825C2C64700347CAF /* PracticeSessionDataModel.swift */; };
+		CE2A5F0E25C2C69100347CAF /* PracticeSessionDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A5F0D25C2C69100347CAF /* PracticeSessionDataLoader.swift */; };
+		CE2A5F1D25C2D61500347CAF /* PracticeSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A5F1C25C2D61500347CAF /* PracticeSessionCell.swift */; };
+		CE2A5F2625C2E33500347CAF /* PracticeSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2A5F2525C2E33500347CAF /* PracticeSessionProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE2A5ED025C2BD3D00347CAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE2A5EB125C2BD3900347CAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE2A5EB825C2BD3900347CAF;
+			remoteInfo = FretelloCodingChallenge;
+		};
+		CE2A5EDB25C2BD3D00347CAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE2A5EB125C2BD3900347CAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE2A5EB825C2BD3900347CAF;
+			remoteInfo = FretelloCodingChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		109E5495C0C7952C7D91D072 /* Pods-FretelloCodingChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FretelloCodingChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-FretelloCodingChallengeTests/Pods-FretelloCodingChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E6B25BD0E6BA9FC733AD011 /* Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		340F9C6FE462C09A74782B41 /* Pods-FretelloCodingChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FretelloCodingChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-FretelloCodingChallengeTests/Pods-FretelloCodingChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		375472276BBE1622EBC594F8 /* Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6A1D191B5B509CC83F0DA889 /* Pods-FretelloCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FretelloCodingChallenge.debug.xcconfig"; path = "Target Support Files/Pods-FretelloCodingChallenge/Pods-FretelloCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		7C749EDDB51A0B06ED77A09E /* Pods_FretelloCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FretelloCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98F4C456FE02E7C10F29CF9 /* Pods-FretelloCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FretelloCodingChallenge.release.xcconfig"; path = "Target Support Files/Pods-FretelloCodingChallenge/Pods-FretelloCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		AD11BD2B3CFDC60B8FCF4F2A /* Pods_FretelloCodingChallenge_FretelloCodingChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FretelloCodingChallenge_FretelloCodingChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B873DFC896E1924675A4AFA8 /* Pods_FretelloCodingChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FretelloCodingChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2A5EB925C2BD3900347CAF /* FretelloCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FretelloCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2A5EBC25C2BD3900347CAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE2A5EBE25C2BD3900347CAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE2A5EC025C2BD3900347CAF /* PracticeSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionViewController.swift; sourceTree = "<group>"; };
+		CE2A5EC525C2BD3C00347CAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE2A5EC825C2BD3C00347CAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE2A5ECA25C2BD3C00347CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2A5ECF25C2BD3D00347CAF /* FretelloCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FretelloCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2A5ED325C2BD3D00347CAF /* FretelloCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FretelloCodingChallengeTests.swift; sourceTree = "<group>"; };
+		CE2A5ED525C2BD3D00347CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2A5EDA25C2BD3D00347CAF /* FretelloCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FretelloCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE2A5EDE25C2BD3D00347CAF /* FretelloCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FretelloCodingChallengeUITests.swift; sourceTree = "<group>"; };
+		CE2A5EE025C2BD3D00347CAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2A5F0825C2C64700347CAF /* PracticeSessionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionDataModel.swift; sourceTree = "<group>"; };
+		CE2A5F0D25C2C69100347CAF /* PracticeSessionDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionDataLoader.swift; sourceTree = "<group>"; };
+		CE2A5F1C25C2D61500347CAF /* PracticeSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionCell.swift; sourceTree = "<group>"; };
+		CE2A5F2525C2E33500347CAF /* PracticeSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionProtocol.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE2A5EB625C2BD3900347CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F1AEDDF5F6D53B00340BE0 /* Pods_FretelloCodingChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2A5ECC25C2BD3D00347CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9348AED4EAAEDDF6E30AFC35 /* Pods_FretelloCodingChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2A5ED725C2BD3D00347CAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7D23D78F4D7F7C7A58DAC7 /* Pods_FretelloCodingChallenge_FretelloCodingChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E9A3A48882EA6ED01F46948 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A1D191B5B509CC83F0DA889 /* Pods-FretelloCodingChallenge.debug.xcconfig */,
+				A98F4C456FE02E7C10F29CF9 /* Pods-FretelloCodingChallenge.release.xcconfig */,
+				2E6B25BD0E6BA9FC733AD011 /* Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests.debug.xcconfig */,
+				375472276BBE1622EBC594F8 /* Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests.release.xcconfig */,
+				109E5495C0C7952C7D91D072 /* Pods-FretelloCodingChallengeTests.debug.xcconfig */,
+				340F9C6FE462C09A74782B41 /* Pods-FretelloCodingChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C20D6AA298BC8717B14205DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C749EDDB51A0B06ED77A09E /* Pods_FretelloCodingChallenge.framework */,
+				AD11BD2B3CFDC60B8FCF4F2A /* Pods_FretelloCodingChallenge_FretelloCodingChallengeUITests.framework */,
+				B873DFC896E1924675A4AFA8 /* Pods_FretelloCodingChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE2A5EB025C2BD3900347CAF = {
+			isa = PBXGroup;
+			children = (
+				CE2A5EBB25C2BD3900347CAF /* FretelloCodingChallenge */,
+				CE2A5ED225C2BD3D00347CAF /* FretelloCodingChallengeTests */,
+				CE2A5EDD25C2BD3D00347CAF /* FretelloCodingChallengeUITests */,
+				CE2A5EBA25C2BD3900347CAF /* Products */,
+				4E9A3A48882EA6ED01F46948 /* Pods */,
+				C20D6AA298BC8717B14205DE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE2A5EBA25C2BD3900347CAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A5EB925C2BD3900347CAF /* FretelloCodingChallenge.app */,
+				CE2A5ECF25C2BD3D00347CAF /* FretelloCodingChallengeTests.xctest */,
+				CE2A5EDA25C2BD3D00347CAF /* FretelloCodingChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE2A5EBB25C2BD3900347CAF /* FretelloCodingChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A5F2E25C2FFE600347CAF /* Model */,
+				CE2A5F2F25C3001000347CAF /* View */,
+				CE2A5F3025C3001D00347CAF /* Controller */,
+				CE2A5F2D25C2FFCF00347CAF /* Services */,
+				CE2A5F2425C2E31600347CAF /* Protocol */,
+				CE2A5EBC25C2BD3900347CAF /* AppDelegate.swift */,
+				CE2A5EBE25C2BD3900347CAF /* SceneDelegate.swift */,
+				CE2A5EC525C2BD3C00347CAF /* Assets.xcassets */,
+				CE2A5EC725C2BD3C00347CAF /* LaunchScreen.storyboard */,
+				CE2A5ECA25C2BD3C00347CAF /* Info.plist */,
+			);
+			path = FretelloCodingChallenge;
+			sourceTree = "<group>";
+		};
+		CE2A5ED225C2BD3D00347CAF /* FretelloCodingChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A5ED325C2BD3D00347CAF /* FretelloCodingChallengeTests.swift */,
+				CE2A5ED525C2BD3D00347CAF /* Info.plist */,
+			);
+			path = FretelloCodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		CE2A5EDD25C2BD3D00347CAF /* FretelloCodingChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A5EDE25C2BD3D00347CAF /* FretelloCodingChallengeUITests.swift */,
+				CE2A5EE025C2BD3D00347CAF /* Info.plist */,
+			);
+			path = FretelloCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		CE2A5F2425C2E31600347CAF /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A5F2525C2E33500347CAF /* PracticeSessionProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CE2A5F2D25C2FFCF00347CAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A5F0D25C2C69100347CAF /* PracticeSessionDataLoader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE2A5F2E25C2FFE600347CAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A5F0825C2C64700347CAF /* PracticeSessionDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE2A5F2F25C3001000347CAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A5F1C25C2D61500347CAF /* PracticeSessionCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE2A5F3025C3001D00347CAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A5EC025C2BD3900347CAF /* PracticeSessionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE2A5EB825C2BD3900347CAF /* FretelloCodingChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2A5EE325C2BD3D00347CAF /* Build configuration list for PBXNativeTarget "FretelloCodingChallenge" */;
+			buildPhases = (
+				DE974BBB2A9F333D1C318A97 /* [CP] Check Pods Manifest.lock */,
+				CE2A5EB525C2BD3900347CAF /* Sources */,
+				CE2A5EB625C2BD3900347CAF /* Frameworks */,
+				CE2A5EB725C2BD3900347CAF /* Resources */,
+				CB68503A3F6B7A9AD2A1F758 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FretelloCodingChallenge;
+			productName = FretelloCodingChallenge;
+			productReference = CE2A5EB925C2BD3900347CAF /* FretelloCodingChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE2A5ECE25C2BD3D00347CAF /* FretelloCodingChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2A5EE625C2BD3D00347CAF /* Build configuration list for PBXNativeTarget "FretelloCodingChallengeTests" */;
+			buildPhases = (
+				35517574370FDFF26D741BD1 /* [CP] Check Pods Manifest.lock */,
+				CE2A5ECB25C2BD3D00347CAF /* Sources */,
+				CE2A5ECC25C2BD3D00347CAF /* Frameworks */,
+				CE2A5ECD25C2BD3D00347CAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE2A5ED125C2BD3D00347CAF /* PBXTargetDependency */,
+			);
+			name = FretelloCodingChallengeTests;
+			productName = FretelloCodingChallengeTests;
+			productReference = CE2A5ECF25C2BD3D00347CAF /* FretelloCodingChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE2A5ED925C2BD3D00347CAF /* FretelloCodingChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE2A5EE925C2BD3D00347CAF /* Build configuration list for PBXNativeTarget "FretelloCodingChallengeUITests" */;
+			buildPhases = (
+				BC65267E710E52EAC77FAA22 /* [CP] Check Pods Manifest.lock */,
+				CE2A5ED625C2BD3D00347CAF /* Sources */,
+				CE2A5ED725C2BD3D00347CAF /* Frameworks */,
+				CE2A5ED825C2BD3D00347CAF /* Resources */,
+				BEB821869D21AC111F27FAE3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE2A5EDC25C2BD3D00347CAF /* PBXTargetDependency */,
+			);
+			name = FretelloCodingChallengeUITests;
+			productName = FretelloCodingChallengeUITests;
+			productReference = CE2A5EDA25C2BD3D00347CAF /* FretelloCodingChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE2A5EB125C2BD3900347CAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					CE2A5EB825C2BD3900347CAF = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					CE2A5ECE25C2BD3D00347CAF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CE2A5EB825C2BD3900347CAF;
+					};
+					CE2A5ED925C2BD3D00347CAF = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = CE2A5EB825C2BD3900347CAF;
+					};
+				};
+			};
+			buildConfigurationList = CE2A5EB425C2BD3900347CAF /* Build configuration list for PBXProject "FretelloCodingChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE2A5EB025C2BD3900347CAF;
+			productRefGroup = CE2A5EBA25C2BD3900347CAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE2A5EB825C2BD3900347CAF /* FretelloCodingChallenge */,
+				CE2A5ECE25C2BD3D00347CAF /* FretelloCodingChallengeTests */,
+				CE2A5ED925C2BD3D00347CAF /* FretelloCodingChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE2A5EB725C2BD3900347CAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2A5EC925C2BD3C00347CAF /* LaunchScreen.storyboard in Resources */,
+				CE2A5EC625C2BD3C00347CAF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2A5ECD25C2BD3D00347CAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2A5ED825C2BD3D00347CAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35517574370FDFF26D741BD1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FretelloCodingChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC65267E710E52EAC77FAA22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEB821869D21AC111F27FAE3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests/Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB68503A3F6B7A9AD2A1F758 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FretelloCodingChallenge/Pods-FretelloCodingChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FretelloCodingChallenge/Pods-FretelloCodingChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FretelloCodingChallenge/Pods-FretelloCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE974BBB2A9F333D1C318A97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FretelloCodingChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE2A5EB525C2BD3900347CAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2A5EC125C2BD3900347CAF /* PracticeSessionViewController.swift in Sources */,
+				CE2A5F0E25C2C69100347CAF /* PracticeSessionDataLoader.swift in Sources */,
+				CE2A5F2625C2E33500347CAF /* PracticeSessionProtocol.swift in Sources */,
+				CE2A5EBD25C2BD3900347CAF /* AppDelegate.swift in Sources */,
+				CE2A5EBF25C2BD3900347CAF /* SceneDelegate.swift in Sources */,
+				CE2A5F0925C2C64700347CAF /* PracticeSessionDataModel.swift in Sources */,
+				CE2A5F1D25C2D61500347CAF /* PracticeSessionCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2A5ECB25C2BD3D00347CAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2A5ED425C2BD3D00347CAF /* FretelloCodingChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE2A5ED625C2BD3D00347CAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2A5EDF25C2BD3D00347CAF /* FretelloCodingChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE2A5ED125C2BD3D00347CAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE2A5EB825C2BD3900347CAF /* FretelloCodingChallenge */;
+			targetProxy = CE2A5ED025C2BD3D00347CAF /* PBXContainerItemProxy */;
+		};
+		CE2A5EDC25C2BD3D00347CAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE2A5EB825C2BD3900347CAF /* FretelloCodingChallenge */;
+			targetProxy = CE2A5EDB25C2BD3D00347CAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE2A5EC725C2BD3C00347CAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE2A5EC825C2BD3C00347CAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE2A5EE125C2BD3D00347CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE2A5EE225C2BD3D00347CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE2A5EE425C2BD3D00347CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A1D191B5B509CC83F0DA889 /* Pods-FretelloCodingChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHTSMY47AT;
+				INFOPLIST_FILE = FretelloCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lima.FretelloCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE2A5EE525C2BD3D00347CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98F4C456FE02E7C10F29CF9 /* Pods-FretelloCodingChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHTSMY47AT;
+				INFOPLIST_FILE = FretelloCodingChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lima.FretelloCodingChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE2A5EE725C2BD3D00347CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 109E5495C0C7952C7D91D072 /* Pods-FretelloCodingChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHTSMY47AT;
+				INFOPLIST_FILE = FretelloCodingChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lima.FretelloCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FretelloCodingChallenge.app/FretelloCodingChallenge";
+			};
+			name = Debug;
+		};
+		CE2A5EE825C2BD3D00347CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 340F9C6FE462C09A74782B41 /* Pods-FretelloCodingChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHTSMY47AT;
+				INFOPLIST_FILE = FretelloCodingChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lima.FretelloCodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FretelloCodingChallenge.app/FretelloCodingChallenge";
+			};
+			name = Release;
+		};
+		CE2A5EEA25C2BD3D00347CAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E6B25BD0E6BA9FC733AD011 /* Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHTSMY47AT;
+				INFOPLIST_FILE = FretelloCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lima.FretelloCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FretelloCodingChallenge;
+			};
+			name = Debug;
+		};
+		CE2A5EEB25C2BD3D00347CAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 375472276BBE1622EBC594F8 /* Pods-FretelloCodingChallenge-FretelloCodingChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SHTSMY47AT;
+				INFOPLIST_FILE = FretelloCodingChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Lima.FretelloCodingChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FretelloCodingChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE2A5EB425C2BD3900347CAF /* Build configuration list for PBXProject "FretelloCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2A5EE125C2BD3D00347CAF /* Debug */,
+				CE2A5EE225C2BD3D00347CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2A5EE325C2BD3D00347CAF /* Build configuration list for PBXNativeTarget "FretelloCodingChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2A5EE425C2BD3D00347CAF /* Debug */,
+				CE2A5EE525C2BD3D00347CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2A5EE625C2BD3D00347CAF /* Build configuration list for PBXNativeTarget "FretelloCodingChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2A5EE725C2BD3D00347CAF /* Debug */,
+				CE2A5EE825C2BD3D00347CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE2A5EE925C2BD3D00347CAF /* Build configuration list for PBXNativeTarget "FretelloCodingChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE2A5EEA25C2BD3D00347CAF /* Debug */,
+				CE2A5EEB25C2BD3D00347CAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE2A5EB125C2BD3900347CAF /* Project object */;
+}
