@@ -67,6 +67,7 @@
 		CE2A5F0D25C2C69100347CAF /* PracticeSessionDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionDataLoader.swift; sourceTree = "<group>"; };
 		CE2A5F1C25C2D61500347CAF /* PracticeSessionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionCell.swift; sourceTree = "<group>"; };
 		CE2A5F2525C2E33500347CAF /* PracticeSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSessionProtocol.swift; sourceTree = "<group>"; };
+		CE2A5F3125C304D800347CAF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +156,7 @@
 				CE2A5EC525C2BD3C00347CAF /* Assets.xcassets */,
 				CE2A5EC725C2BD3C00347CAF /* LaunchScreen.storyboard */,
 				CE2A5ECA25C2BD3C00347CAF /* Info.plist */,
+				CE2A5F3125C304D800347CAF /* README.md */,
 			);
 			path = FretelloCodingChallenge;
 			sourceTree = "<group>";

@@ -9,11 +9,11 @@ import UIKit
 
 class PracticeSessionCell: UITableViewCell {
     
-    var session: WelcomeElement? {
+    var session: Exercise? {
         didSet {
             if let session = session {
-                titleLabel.text = session.name
-                timeLabel.text = String(session.practicedOnDate?.prefix(10) ?? "")
+                excerciseNameLabel.text = session.name
+                practiceTimeLabel.text = String(session.practicedAtBPM ?? 0)
             }
         }
     }
@@ -30,52 +30,65 @@ class PracticeSessionCell: UITableViewCell {
     
     let cellView: UIView = {
         let cellView = UIView()
-        cellView.backgroundColor = #colorLiteral(red: 0.8156862745, green: 0.6352941176, blue: 0.2352941176, alpha: 1)
         cellView.layer.cornerRadius = 10
         return cellView
     }()
     
-    let titleLabel: UILabel = {
+    let exerciseImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.layer.cornerRadius = 40
+        imageView.image = UIImage(named: "guitar")
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }()
+    
+    let excerciseNameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 20)
-        label.textColor = #colorLiteral(red: 0.1568627451, green: 0.1529411765, blue: 0.1529411765, alpha: 1)
+        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.textColor = UIColor(named: "textColor")
         label.numberOfLines = 0
-        label.text = "Introductory Session"
         label.textAlignment = .center
         return label
     }()
     
-    let timeLabel: UILabel = {
+    let practiceTimeLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 14)
-        label.textColor = #colorLiteral(red: 0.1568627451, green: 0.1529411765, blue: 0.1529411765, alpha: 1)
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.textColor = UIColor(named: "textColor")
         label.numberOfLines = 0
-        label.text = "2016-05-08"
         label.textAlignment = .center
         return label
     }()
 
     func setupViews() {
         contentView.addSubview(cellView)
-        cellView.addSubview(titleLabel)
-        cellView.addSubview(timeLabel)
+        cellView.addSubview(exerciseImageView)
+        cellView.addSubview(excerciseNameLabel)
+        cellView.addSubview(practiceTimeLabel)
         
         cellView.snp.makeConstraints { (make) in
-            make.top.equalTo(contentView.snp.top).offset(10)
+            make.top.equalTo(contentView.snp.top).offset(20)
             make.left.equalTo(contentView.snp.left).offset(15)
             make.right.equalTo(contentView.snp.right).offset(-15)
             make.bottom.equalTo(contentView.snp.bottom).offset(-15)
-            make.height.equalTo(100)
-        }
-    
-        titleLabel.snp.makeConstraints { (make) in
-            make.centerX.equalTo(cellView)
+            make.height.equalTo(200)
         }
         
-        timeLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(titleLabel.snp.top).offset(30)
+        exerciseImageView.snp.makeConstraints { (make) in
             make.centerX.equalTo(cellView)
-            make.bottom.equalTo(cellView.snp.bottom).offset(-30)
+            make.top.equalTo(cellView).offset(10)
+            make.height.equalTo(80)
+            make.width.equalTo(80)
+        }
+
+        excerciseNameLabel.snp.makeConstraints { (make) in
+            make.centerX.equalTo(cellView)
+            make.top.equalTo(exerciseImageView.snp.bottom).offset(20)
+        }
+
+        practiceTimeLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(excerciseNameLabel.snp.bottom).offset(20)
+            make.centerX.equalTo(cellView)
         }
     }
 }
